@@ -1,0 +1,3 @@
+PS D:\node js project\leaning\02_01> node ./module-demo.js
+Hello From module. I am Ajay Wagh
+PS D:\node js project\leaning\02_01>

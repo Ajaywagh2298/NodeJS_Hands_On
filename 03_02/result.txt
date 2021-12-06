@@ -1,0 +1,18 @@
+
+PS D:\node js project\leaning> cd 03_02
+PS D:\node js project\leaning\03_02> node ./demo.js
+[
+  '$RECYCLE.BIN',
+  'CamOnCrime',
+  'CAPTCHA-Validator-main',
+  'Config.Msi',
+  'data',
+  'DI PROJECT',
+  'empire-admin',
+  'node js project',
+  'ProgramData',
+  'sample-jpa',
+  'System Volume Information',
+  'xampp'
+]
+PS D:\node js project\leaning\03_02>

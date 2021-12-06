@@ -1,0 +1,1 @@
+exports.myText = "Hello From module. I am Ajay Wagh"

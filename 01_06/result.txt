@@ -1,0 +1,69 @@
+PS D:\node js project\leaning\01_06> node ./sync-demo.js
+data: [
+  '$Recycle.Bin',
+  '$SysReset',
+  '$WinREAgent',
+  'ADE',
+  'app',
+  'bootmgr',
+  'Config.Msi',
+  'cygwin64',
+  'Dell',
+  'Documents and Settings',
+  'DumpStack.log.tmp',
+  'hiberfil.sys',
+  'Intel',
+  'lib',
+  'MSOCache',
+  'OneDriveTemp',
+  'oraclexe',
+  'pagefile.sys',
+  'PerfLogs',
+  'Program Files',
+  'Program Files (x86)',
+  'ProgramData',
+  'Recovery',
+  'swapfile.sys',
+  'System Repair',
+  'System Volume Information',
+  'Users',
+  'Windows',
+  'xampp'
+]
+this comes after
+
+
+
+PS D:\node js project\leaning\01_06> node ./async-demo.js
+this come after
+data: [
+  '$Recycle.Bin',
+  '$SysReset',
+  '$WinREAgent',
+  'ADE',
+  'app',
+  'bootmgr',
+  'Config.Msi',
+  'cygwin64',
+  'Dell',
+  'Documents and Settings',
+  'DumpStack.log.tmp',
+  'hiberfil.sys',
+  'Intel',
+  'lib',
+  'MSOCache',
+  'OneDriveTemp',
+  'oraclexe',
+  'pagefile.sys',
+  'PerfLogs',
+  'Program Files',
+  'Program Files (x86)',
+  'ProgramData',
+  'Recovery',
+  'swapfile.sys',
+  'System Repair',
+  'System Volume Information',
+  'Users',
+  'Windows',
+  'xampp'
+]

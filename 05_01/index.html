@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+<div class="container">
+    <br>
+    <div class="jumbotron">
+        <h1 class="display-4">Send Message</h1>
+        <br>
+        <input type="text" id="name" class="form-control" placeholder="Name">
+        <br>
+        <textarea id="message" class="form-control"></textarea>
+        <br>
+        <buttonc id="send" class="btn btn-success">Send</buttonc>
+    </div>
+        <div id="mess">
+
+        </div>
+</div>
+
+<script>
+    var socket = io()
+ $(() => {
+   $("#send").click(() =>{
+           var message = {name : $("#name").val(),message:$("#message").val()}
+       postMessages(message)
+       })
+       getMessages()
+    })
+
+    socket.on('message',addMessages)
+    function  addMessages(messages){
+      $('#mess').append(`<h4> ${messages.name} </h4> <p> ${messages.message} </p>`);
+    }
+
+    function getMessages(){
+       $.get('http://localhost:8040/Messages',(data)=>{
+           console.log(data)
+           data.forEach(function (element){
+               addMessages(element)
+           },this);
+       })
+    }
+
+ function postMessages(message){
+     $.post('http://localhost:8040/Messages',message)
+ }
+</script>
+</body>
+</html>

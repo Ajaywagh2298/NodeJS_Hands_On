@@ -1,0 +1,35 @@
+PS D:\node js project\leaning\02_02> npm install lodash
+
+added 1 package, and audited 2 packages in 2s
+
+found 0 vulnerabilities
+PS D:\node js project\leaning\02_02>
+
+**************************************DEMO JS*************************************
+
+
+PS D:\node js project\leaning\02_02> node ./demo.js
+26
+PS D:\node js project\leaning\02_02> node ./demo.js
+24
+PS D:\node js project\leaning\02_02> node ./demo.js
+53
+PS D:\node js project\leaning\02_02> node ./demo.js
+39
+PS D:\node js project\leaning\02_02>
+
+
+_____________________________________________________________ NODEMON PACKAGE______________________________________
+
+PS D:\node js project\leaning\02_02> npm install -g nodemon
+
+changed 120 packages, and audited 120 packages in 9s
+
+11 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+PS D:\node js project\leaning\02_02>
+
+
+
